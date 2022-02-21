@@ -13,85 +13,110 @@ body {
 
 /* start header */
 
-.logo-container {  
+.logo-container { 
+    display: block;
     display: flex;
-    width: 100%;    
-    flex-direction: row;
+    margin-top: 30px;
+    width: 30%;    
+    flex-direction: row; 
     justify-content: center;
-    align-content: center;
-    align-items: center;
+    margin-bottom: 20px;      
+}
+
+.logo {   
+    display: flex;
+    align-items: baseline;
 }
       
-.logo {
-    display: flex;
-    font-size: 45px;
+.logo-text {
+    /* display: flex; */
+    font-size: 80px;
     font-family: 'Amatic SC', cursive;   
     color: white; 
     font-style: italic; 
-    align-items: center;   
+    align-items: flex-start;   
 }
 
 .logo img {
-    display: flex;
-    height: 100px;
-    margin-right: 20px;
+    /* display: flex; */
+    height: 80px;
+    margin-right: 20px;  
 }
 
 /* end header */
 
-.main-container {
+/* start main */
 
-    padding: 25px;
+.main-container {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;   
-    background-color: #9EF4D5;
-    width: 80%;
     margin-top: 30px;
+    margin-bottom: 0px;      
+    width: 80%;
+    height: 40%;   
     display: flex;
-    justify-content: center;
-   
+    justify-content: center; 
+}
+
+.container-text {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;    
 }
 
 h2 { 
     display: flex;   
-    font-family: 'Rubik', sans-serif;
-    font-size: 40px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 60px;
     margin-bottom: 20px;
     color: white;
     text-align: left;
-    margin-right: 20px;
     justify-content: center;
     align-items: center;
     line-height: 130%;
-
 }
 
 .container-image {
+    display: flex;     
+}
 
-    display: flex;
-    flex-direction: row;
+.container-image-second { 
+    animation: imgSpin 5s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes imgSpin {
+	0% {transform: scale(1) rotate(0deg);}
+	50% {transform: scale(1.5) rotate(25deg);}
+	100% {transform: scale(1) rotate(0deg);}
+}
+
+.btn { 
+    max-width: 100px;
+    position: relative;
     justify-content: center;
-    height: 300px;
+    border: none; 
+    background-color: rgb(16, 56, 88);
+    font-family: 'Amatic SC', cursive;   
+    color: white; 
+    font-size: 40px;
+    font-style: italic;
+    border-radius: 20px;
 }
 
-.image-text {
-
-    display: flex;
-    align-self: flex-start;
-    font-family: 'Rubik', sans-serif;
-    font-size: 16px;
-    color: #12525a;
-    margin: 20px;
-    line-height: 170%;
-
+.btn:hover {
+    background-color: aqua;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.3s;
 }
 
-.image {
+/* end main */
 
-    display: flex;
-}
+
+
+
+
 
 
 
